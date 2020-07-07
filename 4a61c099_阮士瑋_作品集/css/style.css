@@ -1,0 +1,296 @@
+/*=============================================
+=                  General                    =
+=============================================*/
+
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/*=============================================
+=                  Header                     =
+=============================================*/
+
+#header {
+    background-image: url('../img/headerImage.jpg');
+    background-size: cover;
+    /* 把背景固定在後方 */
+    background-attachment: fixed;
+    padding: 200px 0;
+    border-radius: 0;
+    /* filter: brightness(0.5); */
+    position: relative;
+    height: 1000px;
+}
+
+#header:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+#header>.container {
+    position: relative;
+    z-index: 5;
+}
+
+.ME{
+    position: absolute;
+    top: 200px;
+    left: -200PX;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    padding: 10PX;
+    border-left: 3PX solid white;
+}
+
+.name{
+    font-size: 80PX;
+    
+}
+
+/*=============================================
+=                  work-1                      =
+=============================================*/
+.work-1{
+    height: 580px;
+
+}
+
+.class-1{
+    border: 3px solid black;
+    position: relative;
+    left: 130px;
+    top: -20px;
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    font-size: 28px;
+    line-height: 200px;
+    text-align: center;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+
+}
+
+.TITLE-1{
+    position: relative;
+    top: -175PX;
+    left: 350PX;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+
+}
+
+.gun{
+    background-image: url(../img/GUN.png);
+    background-size: cover;
+    height: 400px;
+    width: 800px;
+    position: relative;
+    left: 130px;
+    top: -90px;
+}
+
+.gun-1{
+    background-image: url(../img/GUN-1.png);
+    background-size: cover;
+    height: 200px;
+    width: 450px;
+    position: relative;
+    top: -550px;
+    left: 1000PX;
+}
+
+.intro{
+    position: relative;
+    top: -600px;
+    left: 1000PX;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+}
+
+.use{
+    position: relative;
+    top: -550px;
+    left: 1200PX;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+}
+
+
+
+/*=============================================
+=                  work-2                   =
+=============================================*/
+.class-2{
+    border: 3px solid white;
+    position: relative;
+    left: 130px;
+    top: -20px;
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    font-size: 28px;
+    line-height: 200px;
+    text-align: center;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: white;
+}
+
+
+.work-2{
+    color: white;
+    height: 700px;
+}
+
+.use-1{
+    position: relative;
+    top: -650px;
+    left: 1000PX;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+}
+
+.intro-1{
+    position: relative;
+    top: -700px;
+    left: 1000PX;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+}
+
+.cheer{
+    background-image: url(../img/cheer.png);
+    height: 450px;
+    width: 600px;
+    background-size: cover;
+    border-radius: 30px;
+    position: relative;
+    left: 230px;
+    top: -90px;
+}
+
+/*=============================================
+=                  work-3                    =
+=============================================*/
+
+.work-3{
+    height: 900px;
+}
+
+.team{
+    background-image: url(../img/team.png);
+    background-size: cover;
+    height: 215px;
+    width: 290px;
+    position: relative;
+    top: -800px;
+    left: 1000PX;
+    font-size: 30px;
+}
+
+.tea{
+    background-image: url(../img/tea.png);
+    height: 500px;
+    width: 500px;
+    background-size: cover;
+    border-radius: 40px;
+    position: relative;
+    left: 130px;
+    top: -30px;
+}
+
+.intro-2{
+    position: relative;
+    top: -770px;
+    left: 1000PX;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+}
+
+.use-2{
+    position: relative;
+    top: -750px;
+    left: 1000PX;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+}
+
+.tea-1{
+    background-image: url(../img/use-1.png);
+    background-size: cover;
+    height: 92px;
+    width: 450px;
+    position: relative;
+    top: -750px;
+    left: 1000PX;
+}
+
+/*=============================================
+=                  interesting                   =
+=============================================*/
+
+.interesting{
+    height: 300PX;
+    font-size: 40PX;
+    line-height: 30PX;
+}
+
+[id^='galleryImage'] {
+    background-size: cover;
+    height: 700px;
+    filter: grayscale(100%);
+}
+
+[id^='galleryImage']>.galleryText {
+    color: white;
+    line-height: 700px;
+    font-size: 6px;
+    opacity: 0;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    text-align: center;
+}
+
+[id^='galleryImage'],
+.galleryText {
+    transition: all .3s ease-in-out;
+}
+
+[id^='galleryImage']:hover {
+    filter: grayscale(0%);
+}
+
+[id^='galleryImage']:hover>.galleryText {
+    opacity: 1;
+    font-size: 22px;
+}
+
+/* 背景圖片 */
+
+#galleryImage1 {
+    background-image: url('../img/gumdan-1.jpg');
+}
+
+#galleryImage2 {
+    background-image: url('../img/gumdan-2.jpg');
+}
+
+#galleryImage3 {
+    background-image: url('../img/gumdan-3.jpg');
+}
+
+#galleryImage4 {
+    background-image: url('../img/gumdan-4.jpg');
+}
+
+
